@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS/form1.css" />
+        <title>おみくじ</title>
+    
+    </head>
+   
+    <body>
+        <h1 id="india">～おみくじの間へようこそ～</h1>
+        <div class="omikuji">
+         <input id="omikuji_btn" type="button" value="おみくじ（1日1回引いてみよう！）" class="omikuji">
+            <script>
+            document.getElementById( "omikuji_btn" ).onclick = function() {
+                var rnd = Math.floor( Math.random()*6 );
+                var omikuji;
+                if (rnd === 0) omikuji = "大吉！最高に良いことあるかもです！";
+                if (rnd === 1) omikuji = "吉！中吉より良いことあるかもです！";
+                if (rnd === 2) omikuji = "中吉！小吉より良いことあるかもです！";
+                if (rnd === 3) omikuji = "小吉！末吉より良いことあるかもです！";
+                if (rnd === 4) omikuji = "末吉！凶よりはまだ大丈夫です！";
+                if (rnd === 5) omikuji = "凶！もう一回引いても大丈夫ですよ！";
+                alert(omikuji);
+            }
+         </script>
+
+        </div>
+        <br />
+        <p>いかがだったでしょうか。</p>
+        <p>もし結果が悪かった場合は再度このサイトに来て、チャレンジしてみて下さい！</p>
+        <p>下のリンクから最初にページに戻ることが出来ます！</p>
+        <p>本サイトに足を運んでいただきありがとうございました。</p>
+        
+        <a href="index.html">～デリー大学での生活とインドのおすすめ観光地の紹介～へのリンク</a>
+        
+    </body>
+</html>
