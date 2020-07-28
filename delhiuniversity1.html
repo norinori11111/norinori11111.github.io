@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS/form1.css" />
+        <title>デリー大学の一日のスケジュール</title>
+        
+    </head>
+    
+    <body>
+        
+        <h1 id="top">～デリー大学の一日のスケジュールの紹介～</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#profile1">朝の時間帯</a></li>
+                <li><a href="#profile2">昼の時間帯</a></li>
+                 <li><a href="#profile3">夜の時間帯</a></li>
+                <li><a href="#profile4">留学先</a></li>
+                <li><a href="#profile5">留学先の学校内写真一覧</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h2 id="profile1">〇朝の時間帯</h2>
+             <p>朝は毎回8時にご飯を寮で食べます。</p>
+            <p>寮の施設では、毎日料理をするおじさんがご飯が出来たという合図を鐘で知らせてくれます。</p>
+            <p class="img_center">
+                <img src="img_homework1/lanch.jpg" alt="" width="700" height="600"/></p>
+            <br />  
+            
+            <h2 id="profile2">〇お昼の時間帯</h2>
+            <p>基本的に、朝8時30分から大体午後の2時まで授業があります。</p>
+            <p>その後、課外活動や部活動を主にしていましたが、特に予定が無い日は図書館に行き、勉強をしていました。</p><p>下の写真は図書館の写真です。</p>
+            <p class="img_center">
+                <img src="img_homework1/toshokann.jpg" alt="図書館の写真" width="700" height="600"/></p>
+            <br />
+             <p>課外活動に行く場合はよくリキシャと呼ばれるバイクに乗ります。リキシャにも種類があり、そのリキシャの写真も載せておきますね！</p>
+            <p class="img_center">
+                <img src="img_homework1/rikisha.jpg" alt="リキシャの写真" width="700" height="600"/></p>
+            <br />
+     
+            
+            <h2 id="profile3">〇夜の時間帯</h2>
+            <p>夜は、勉強のリフレッシュをするためにバレーボールを友人としたり、おやつや夕飯を食べに行きます</p>
+            <p>バレーボールを実際にしているシーンとご飯を注文しているシーンの両方の写真を載せておきます。</p>
+            <table>
+              <tr>
+                <td>
+                        <img src="img_homework1/voller.jpg" alt="バレーボール" width="400" height="300"/>
+                </td>
+                <td>
+                   
+                        <img src="img_homework1/lunch.jpg" alt="料理写真" width="400" height="300"/>
+                </td>
+              </tr>
+              <tr>
+             <td>バレーボールをしているシーン</td>
+             <td>食堂で料理を注文しているシーン</td>
+             </tr>
+            </table>
+            <br />
+     
+            <h2 id="profile4">〇留学先</h2>
+            <p>私は2019年の7月中旬から2020年の3月までインドのデリー大学St.Stephen's collegeに留学しておりました。</p>
+            <p>下に大学の画像を載せておくのでぜひご覧ください！</p>
+            <p class="img_center">
+                <img src="img_homework1/college.jpg" alt="大学" width="700" height="550"/></p>
+            <br />
+            
+            <h2 id="profile5">〇留学先の学校内写真一覧</h2>
+            <p>最後に大学内の写真をまとめたスライドがあります。</p><p>下の画像はデリー大学の学内の風景になります。</p>
+            <div class="img_block">
+             <img id="mypic" class="mypic" src="img_homework1/uni1.jpg" width="400" height="300" alt="university landscape">
+              <input type="button" value="戻る" onclick="go_back()">
+              <input type="button" value="進む" onclick="go_forward()">
+              <script>
+               var pics_src = new Array("img_homework1/uni2.jpg","img_homework1/uni3.jpg","img_homework1/uni4.jpg");
+               var num = 0;
+               function go_forward(){
+                 if (num == 2) {
+                    num = 0;
+                }else {
+                    num ++;
+                } document.getElementById("mypic").src=pics_src[num];
+               }
+               function go_back(){
+                 if (num == 0) {
+                    num = 2;
+                 }else {
+                    num --;
+                  } document.getElementById("mypic").src=pics_src[num];
+                }
+              </script>
+            </div>
+            <br />
+            <p>以上がデリー大学の1日のスケジュールの紹介になります。見てくださりありがとうございました。</p>
+            <a href="#top">トップに戻る</a>
+        </div>
+        <script src="JS/final_exam.js"></script>
+        
+    </body>
+    
+
+
+</html>
