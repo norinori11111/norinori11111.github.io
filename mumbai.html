@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS/form1.css" />
+        <title>　ムンバイのおすすめ観光地紹介ページ</title>
+        <!-- AJAX API のロード -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      // 折れ線グラフ
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['年度', 'インド', '日本'],
+          ['1980',  6.7,  2.8],
+          ['1990',  5.5,  4.9],
+          ['2000',  3.8,   2.8],
+          ['2010',  8.5,  4.2]
+        ]);
+        var options = {
+          title: 'インドと日本のGDP成長率（1980~2010）'
+        };
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    </head>
+    
+    <body>
+         <h1 id="top">～ムンバイのおすすめ観光地紹介～</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#a">ドービー・ガード</a></li>
+                <li><a href="#b">インド門（ムンバイ）</a></li>
+                <li><a href="#c">チャトラパティ・シヴァージー・ターミナス駅</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h2 id="a">〇ドービー・ガード</h2>
+             <p>さっそくムンバイのおすすめの観光地をご紹介していきます！</p>
+            <p>まずはじめはドービー・ガードです。ここは町の洗濯物のほとんどが集まる、洗濯場です。ムンバイ州自体はインドの中でもかなり栄えており、ビルが多く建ち並んでいます。しかし、ここドービー・ガードではビルはなく、スラム街のようになっています。ここでは、スラム街と高層ビルを同時に見ることが出来ます。</p>
+            <p>下にドービー・ガードの外観を載せておきます！ぜひご覧になって下さい！</p>
+            <p class="img_center">
+                <img src="img_homework1/wash.jpg" alt="ドービー・ガード" width="700" height="600"/></p>
+            <br />
+            <p>さらに知りたい方は↓にウィキペディアのリンクを張っておくのでご覧下さい！</p>
+            <a href="https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%82%AC%E3%83%BC%E3%83%88" target="_blank">ドービー・ガードの詳しいサイトへのリンク</a>
+            <br />
+           
+            
+            
+            <h2 id="b">〇インド門（ムンバイ）</h2>
+            <p>次に「インド門（ムンバイ）」についてご紹介していきます！</p>
+            <p>私がおすすめする理由は、ここに来ると隣にタージマハルホテルというホテルがあり、そのインドの昔ながらの門とい、イギリスチックな建物の両方を見ることが出来ます。</p>
+            <p>さらに、マーケットが近くにあり、インドの衣類やおいしいインド料理を食べることが出来ます。</p>
+            <p>下にインド門（ムンバイ）の外観を載せておきます！ぜひご覧になって下さい！</p>
+            <p class="img_center">
+                <img src="img_homework1/gateofindia.jpg" alt="インド門（ムンバイ）" width="700" height="600"/></p>
+            <br />
+            <p>さらに知りたい方は↓にウィキペディアのリンクを張っておくのでご覧下さい！</p>
+            <a href="https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%88%E3%82%A5%E3%83%96%E3%83%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB" target="_blank">インド門（ムンバイ）の詳しいサイトへのリンク</a>
+            <br />
+            
+            
+            <h2 id="c">〇チャトラパティ・シヴァージー・ターミナス駅</h2>
+            <p>最後に「チャトラパティ・シヴァージー・ターミナス駅」についてご紹介していきます！</p>
+            <p>私がおすすめする理由は、イギリスチックな建築構造が本当に美しく、初めて見た時にここイギリスなのかと思うくらいイギリスのように感じさせる建物であるからです。</p>
+            <p>建物の中もイギリスを思わせるような造りになっており、入場料もないのでぜひ行ってほしい場所です！</p>
+            <p>下にチャトラパティ・シヴァージー・ターミナス駅の外観を載せておきます！ぜひご覧になって下さい！</p>
+            <p class="img_center">
+                <img src="img_homework1/world_heritage_tarminal.jpg" alt="チャトラパティ・シヴァージー・ターミナス駅" width="700" height="600"/></p>
+            <br />
+            <p>さらに知りたい方は↓にウィキペディアのリンクを張っておくのでご覧下さい！</p>
+            <a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%88%E3%83%A9%E3%83%91%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%BC%E3%83%BB%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%82%B9%E9%A7%85" target="_blank">チャトラパティ・シヴァージー・ターミナス駅の詳しいサイトへのリンク</a>
+            <br />
+            <p>ところで、日本とインドのGDPの成長率は気になりませんか？</p>
+            <p>GDPとは国内総生産のことで、一定期間内に国内で新たに生み出されたモノやサービスの付加価値のことです。％で表示されます！</p>
+            <p>私は経済学部なので、そういった部分が気になったので、グラフを下に作成してみました！ぜひ見ていってください</p>
+            <br />
+              <div id="chart_div" style="width: 80%; height: 400px;"></div>
+            <p>以上になります。見てくださりありがとうございました。</p>
+            <a href="#top">トップに戻る</a>
+        </div>
+         
+   </body>
+
+</html>
