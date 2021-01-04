@@ -1,4 +1,3 @@
-// ▼ カウントダウンタイマーの設定（index.htmlと連携）
 function CountdownTimer(elm, tl, mes) {
   this.initialize.apply(this, arguments);
 }
@@ -34,16 +33,12 @@ CountdownTimer.prototype = {
     return ('0' + num).slice(-2);
   }
 }
-
-// 終了日時の指定
 function CDT() {
   var myD = Date.now(); 
   var start = new Date('2020-07-26T00:00+09:00'); 
   var myS = start.getTime(); 
   var end = new Date('2021-07-23T00:00+09:00'); 
   var myE = end.getTime(); 
-
-  // 今日からオリンピックまでの開催時間
   if (myS <= myD && myE >= myD) {
     var text = '<span>オリンピック</span><span>まで</span>';
     var tl = end;
@@ -55,8 +50,6 @@ function CDT() {
   else {
     var text = "";
   } 
-
-    // 終了日後のコメント
   var timer = new CountdownTimer('cdt_date', tl, 'オリンピック開催しました</small>'); 
   timer.countDown();
   target = document.getElementById("cdt_txt");
